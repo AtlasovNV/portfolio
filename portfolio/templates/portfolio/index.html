@@ -1,30 +1,7 @@
-<!doctype html>
-<html lang="ru">
+{% extends 'portfolio/base.html' %}
+{% load static %}
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="img/favicon.ico" type="image/png">
-    <title>Резюме Атласов Н. В.</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="vendors/linericon/style.css">
-    <link rel="stylesheet" href="css/all.css">
-    <!--        portfolio        -->
-    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-    <link rel="stylesheet" href="css/style-portfoilio.css"> <!-- Gem style -->
-    <script src="js/modernizr.js"></script> <!-- Modernizr -->
-    <!-- main css -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- Owl Stylesheets -->
-    <link rel="stylesheet" href="/owlcarousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="/owlcarousel/css/owl.theme.default.min.css">
-    <!-- javascript -->
-    <script src="/owlcarousel/vendors/jquery.min.js"></script>
-    <script src="/owlcarousel/owlcarousel/owl.carousel.js"></script>
-</head>
+{% block content %}
 <body>
     <!--================Header Menu Area =================-->
     <header class="header_area">
@@ -57,7 +34,7 @@
                 <div class="banner_content">
                     <div class="media">
                         <div class="d-flex">
-                            <img src="img/personal.jpg" alt="">
+                            <img src="{% static 'img/personal.jpg' %}" alt="">
                         </div>
                         <div class="media-body">
                             <div class="personal_text">
@@ -276,96 +253,96 @@
                 <li>
                     <ul class="cd-item-wrapper">
                         <li data-type="dev" class="is-visible">
-                            <a class="meow" href="https://github.com/AtlasovNV/adirect"><img clas="gav" src="img/portfolio/dev/meow.png" alt="adirect.ml"></a>
+                            <a class="meow" href="https://github.com/AtlasovNV/adirect"><img clas="gav" src="{% static 'img/portfolio/dev/adirect.jpg' %}" alt="adirect.ml"></a>
                         </li>
                         <li data-type="ppc" class="is-hidden">
-                            <a class="meow" href="#"><img clas="gav" src="img/portfolio/ppc/analiz.jpg" alt="Кейс"></a>
+                            <a class="meow" href="#"><img clas="gav" src="{% static 'img/portfolio/ppc/analiz.jpg' %}" alt="Кейс"></a>
                         </li>
                     </ul>
                 </li>
                 <li>
                     <ul class="cd-item-wrapper">
                         <li data-type="dev" class="is-visible">
-                            <a class="meow" href="https://github.com/AtlasovNV/parsercbr"><img clas="gav" src="img/portfolio/dev/meow.png" alt="Парсер"></a>
+                            <a class="meow" href="https://github.com/AtlasovNV/parsercbr"><img clas="gav" src="{% static 'img/portfolio/dev/cbr.jpg' %}" alt="Парсер"></a>
                         </li>
                         <li data-type="ppc" class="is-hidden">
-                            <a class="meow" href="#"><img clas="gav" src="img/portfolio/ppc/vrach.jpg" alt="Кейс"></a>
+                            <a class="meow" href="#"><img clas="gav" src="{% static 'img/portfolio/ppc/vrach.jpg' %}" alt="Кейс"></a>
                         </li>
                     </ul>
                 </li>
                 <li>
                     <ul class="cd-item-wrapper">
                         <li data-type="dev" class="is-visible">
-                            <a class="meow" href="https://github.com/AtlasovNV/projectADS"><img clas="gav" src="img/portfolio/dev/meow.png" alt="projectADS"></a>
+                            <a class="meow" href="https://github.com/AtlasovNV/projectADS"><img clas="gav" src="{% static 'img/portfolio/dev/ads.jpg' %}" alt="projectADS"></a>
                         </li>
                         <li data-type="ppc" class="is-hidden">
-                            <a class="meow" href="#"><img clas="gav" src="img/portfolio/ppc/iPhone.jpg" alt="Кейс"></a>
+                            <a class="meow" href="#"><img clas="gav" src="{% static 'img/portfolio/ppc/iPhone.jpg' %}" alt="Кейс"></a>
                         </li>
                     </ul>
                 </li>
                 <li>
                     <ul class="cd-item-wrapper">
                         <li data-type="dev" class="is-visible">
-                            <a class="meow" href="https://github.com/AtlasovNV/Web-site-portfolio"><img clas="gav" src="img/portfolio/dev/meow.png" alt="Web-site-portfolio"></a>
+                            <a class="meow" href="https://github.com/AtlasovNV/portfolio"><img clas="gav" src="{% static 'img/portfolio/dev/this.jpg' %}" alt="Web-site-portfolio"></a>
                         </li>
                         <li data-type="ppc" class="is-hidden">
-                            <a class="meow" href="#"><img clas="gav" src="img/portfolio/ppc/elektropribory.jpg" alt="Кейс"></a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="cd-item-wrapper">
-                        <li data-type="ppc" class="is-hidden">
-                            <a class="meow" href="#"><img clas="gav" src="img/portfolio/ppc/handyman.jpg" alt="Кейс"></a>
+                            <a class="meow" href="#"><img clas="gav" src="{% static 'img/portfolio/ppc/elektropribory.jpg' %}" alt="Кейс"></a>
                         </li>
                     </ul>
                 </li>
                 <li>
                     <ul class="cd-item-wrapper">
                         <li data-type="ppc" class="is-hidden">
-                            <a class="meow" href="#"><img clas="gav" src="img/portfolio/ppc/pc.jpg" alt="Кейс"></a>
+                            <a class="meow" href="#"><img clas="gav" src="{% static 'img/portfolio/ppc/handyman.jpg' %}" alt="Кейс"></a>
                         </li>
                     </ul>
                 </li>
                 <li>
                     <ul class="cd-item-wrapper">
                         <li data-type="ppc" class="is-hidden">
-                            <a class="meow" href="#"><img clas="gav" src="img/portfolio/ppc/green.jpg" alt="Кейс"></a>
+                            <a class="meow" href="#"><img clas="gav" src="{% static 'img/portfolio/ppc/pc.jpg' %}" alt="Кейс"></a>
                         </li>
                     </ul>
                 </li>
                 <li>
                     <ul class="cd-item-wrapper">
                         <li data-type="ppc" class="is-hidden">
-                            <a class="meow" href="#"><img clas="gav" src="img/portfolio/ppc/sport.jpg" alt="Кейс"></a>
+                            <a class="meow" href="#"><img clas="gav" src="{% static 'img/portfolio/ppc/green.jpg' %}" alt="Кейс"></a>
                         </li>
                     </ul>
                 </li>
                 <li>
                     <ul class="cd-item-wrapper">
                         <li data-type="ppc" class="is-hidden">
-                            <a class="meow" href="#"><img clas="gav" src="img/portfolio/ppc/gnb.jpg" alt="Кейс"></a>
+                            <a class="meow" href="#"><img clas="gav" src="{% static 'img/portfolio/ppc/sport.jpg' %}" alt="Кейс"></a>
                         </li>
                     </ul>
                 </li>
                 <li>
                     <ul class="cd-item-wrapper">
                         <li data-type="ppc" class="is-hidden">
-                            <a class="meow" href="#"><img clas="gav" src="img/portfolio/ppc/seo.jpg" alt="Кейс"></a>
+                            <a class="meow" href="#"><img clas="gav" src="{% static 'img/portfolio/ppc/gnb.jpg' %}" alt="Кейс"></a>
                         </li>
                     </ul>
                 </li>
                 <li>
                     <ul class="cd-item-wrapper">
                         <li data-type="ppc" class="is-hidden">
-                            <a class="meow" href="#"><img clas="gav" src="img/portfolio/ppc/mantis.jpg" alt="Кейс"></a>
+                            <a class="meow" href="#"><img clas="gav" src="{% static 'img/portfolio/ppc/seo.jpg' %}" alt="Кейс"></a>
                         </li>
                     </ul>
                 </li>
                 <li>
                     <ul class="cd-item-wrapper">
                         <li data-type="ppc" class="is-hidden">
-                            <a class="meow" href="#"><img clas="gav" src="img/portfolio/ppc/mramor.jpg" alt="Кейс"></a>
+                            <a class="meow" href="#"><img clas="gav" src="{% static 'img/portfolio/ppc/mantis.jpg' %}" alt="Кейс"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="cd-item-wrapper">
+                        <li data-type="ppc" class="is-hidden">
+                            <a class="meow" href="#"><img clas="gav" src="{% static 'img/portfolio/ppc/mramor.jpg' %}" alt="Кейс"></a>
                         </li>
                     </ul>
                 </li>
@@ -375,24 +352,24 @@
     <!--================End Home Gallery Area =================-->
     <section class="feature_area p_120" id="certificate">
         <div class="owl-carousel owl-theme">
-            <div class="item"><img class="certdev" src="/img/certificate/dev/html.jpg" alt=""></div>
-            <div class="item"><img class="certdev" src="/img/certificate/dev/python.jpg" alt=""></div>
-            <div class="item"><img class="certdev" src="/img/certificate/dev/fastpython.jpg" alt=""></div>
-            <div class="item"><img class="certdev" src="/img/certificate/dev/agile.jpg" alt=""></div>
-            <div class="item"><img class="certdev" src="/img/certificate/dev/base.jpg" alt=""></div>
-            <div class="item"><img class="certdev" src="/img/certificate/dev/baseprog.jpg" alt=""></div>
-            <div class="item"><img class="certdev" src="/img/certificate/dev/basepython.jpg" alt=""></div>
-            <div class="item"><img class="certppc" src="/img/certificate/ppc/metrika2020.jpg" alt=""></div>
-            <div class="item"><img class="certppc" src="/img/certificate/ppc/ppc2019.jpg" alt=""></div>
-            <div class="item"><img class="certppc" src="/img/certificate/ppc/analitycs2019.jpg" alt=""></div>
-            <div class="item"><img class="certppc" src="/img/certificate/ppc/ads2019.jpg" alt=""></div>
-            <div class="item"><img class="certppc" src="/img/certificate/ppc/bye2018.jpg" alt=""></div>
-            <div class="item"><img class="certppc" src="/img/certificate/ppc/direct.jpg" alt=""></div>
-            <div class="item"><img class="certppc" src="/img/certificate/ppc/direct2018.jpg" alt=""></div>
-            <div class="item"><img class="certppc" src="/img/certificate/ppc/media2018.jpg" alt=""></div>
-            <div class="item"><img class="certppc" src="/img/certificate/ppc/mobile2018.jpg" alt=""></div>
-            <div class="item"><img class="certppc" src="/img/certificate/ppc/poisk2018.jpg" alt=""></div>
-            <div class="item"><img class="certppc" src="/img/certificate/ppc/video2018.jpg" alt=""></div>
+            <div class="item"><img class="certdev" src="{% static '/img/certificate/dev/html.jpg' %}" alt=""></div>
+            <div class="item"><img class="certdev" src="{% static '/img/certificate/dev/python.jpg' %}" alt=""></div>
+            <div class="item"><img class="certdev" src="{% static '/img/certificate/dev/fastpython.jpg' %}" alt=""></div>
+            <div class="item"><img class="certdev" src="{% static '/img/certificate/dev/agile.jpg' %}" alt=""></div>
+            <div class="item"><img class="certdev" src="{% static '/img/certificate/dev/base.jpg' %}" alt=""></div>
+            <div class="item"><img class="certdev" src="{% static '/img/certificate/dev/baseprog.jpg' %}" alt=""></div>
+            <div class="item"><img class="certdev" src="{% static '/img/certificate/dev/basepython.jpg' %}" alt=""></div>
+            <div class="item"><img class="certppc" src="{% static '/img/certificate/ppc/metrika2020.jpg' %}" alt=""></div>
+            <div class="item"><img class="certppc" src="{% static '/img/certificate/ppc/ppc2019.jpg' %}" alt=""></div>
+            <div class="item"><img class="certppc" src="{% static '/img/certificate/ppc/analitycs2019.jpg' %}" alt=""></div>
+            <div class="item"><img class="certppc" src="{% static '/img/certificate/ppc/ads2019.jpg' %}" alt=""></div>
+            <div class="item"><img class="certppc" src="{% static '/img/certificate/ppc/bye2018.jpg' %}" alt=""></div>
+            <div class="item"><img class="certppc" src="{% static '/img/certificate/ppc/direct.jpg' %}" alt=""></div>
+            <div class="item"><img class="certppc" src="{% static '/img/certificate/ppc/direct2018.jpg' %}" alt=""></div>
+            <div class="item"><img class="certppc" src="{% static '/img/certificate/ppc/media2018.jpg' %}" alt=""></div>
+            <div class="item"><img class="certppc" src="{% static '/img/certificate/ppc/mobile2018.jpg' %}" alt=""></div>
+            <div class="item"><img class="certppc" src="{% static '/img/certificate/ppc/poisk2018.jpg' %}" alt=""></div>
+            <div class="item"><img class="certppc" src="{% static '/img/certificate/ppc/video2018.jpg' %}" alt=""></div>
         </div>
         <script>
             $(document).ready(function() {
@@ -416,21 +393,4 @@
             })
         </script>
     </section>
-    <!-- Optional JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/stellar.js"></script>
-    <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-    <script src="vendors/isotope/isotope.pkgd.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-    <script src="vendors/counter-up/jquery.counterup.min.js"></script>
-    <script src="js/theme.js"></script>
-    <!--   portfolio     -->
-    <script src="js/main.js"></script> <!-- Gem jQuery -->
-    <!-- vendors -->
-    <script src="/owlcarousel/vendors/highlight.js"></script>
-    <script src="/owlcarousel/js/app.js"></script>
-</body>
-</html>
+{% endblock %}
